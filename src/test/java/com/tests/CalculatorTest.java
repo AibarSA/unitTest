@@ -26,16 +26,10 @@ public class CalculatorTest {
 
     @DataProvider
     public Object[][] testDataSumLong(){
-        Object [][] obj = new Object[2][3];
-        obj[0][0] = 500;
-        obj[0][1] = 1000;
-        obj[0][2] = 1500;
-
-        obj[1][0] = 350;
-        obj[1][1] = 1000;
-        obj[1][2] = 1350;
-
-        return obj;
+        return new Object[][]{
+                {500, 1000, 1500},
+                {70, -100, -30}
+        };
     }
 
 
@@ -48,16 +42,11 @@ public class CalculatorTest {
 
     @DataProvider
     public Object[][] testDataSumDouble(){
-        Object [][] obj = new Object[2][3];
-        obj[0][0] = 5.5;
-        obj[0][1] = 7.3;
-        obj[0][2] = 12.8;
+        return new Object[][]{
+                {5.5, 7.3, 12.8},
+                {3.5, 4.5, 8.0},
+        };
 
-        obj[1][0] = 3.5;
-        obj[1][1] = 4.5;
-        obj[1][2] = 8.0;
-
-        return obj;
     }
 
     // test for sub long
@@ -69,16 +58,10 @@ public class CalculatorTest {
 
     @DataProvider
     public Object[][] testDataSubLong(){
-        Object [][] obj = new Object[2][3];
-        obj[0][0] = 500;
-        obj[0][1] = 1000;
-        obj[0][2] = -500;
-
-        obj[1][0] = 3500;
-        obj[1][1] = 1000;
-        obj[1][2] = 2500;
-
-        return obj;
+        return new Object[][]{
+                {500, 1000, -500},
+                {3500, 1000, 2500}
+        };
     }
 
 
@@ -91,16 +74,10 @@ public class CalculatorTest {
 
     @DataProvider
     public Object[][] testDataSubDouble(){
-        Object [][] obj = new Object[2][3];
-        obj[0][0] = 9.5;
-        obj[0][1] = 7.3;
-        obj[0][2] = 2.2;
-
-        obj[1][0] = 12.5;
-        obj[1][1] = 4.2;
-        obj[1][2] = 8.3;
-
-        return obj;
+        return new Object[][]{
+                {9.5, 7.3, 2.2},
+                {12.5, 4.2, 8.3}
+        };
     }
 
 
@@ -113,16 +90,10 @@ public class CalculatorTest {
 
     @DataProvider
     public Object[][] testDataMultLong(){
-        Object [][] obj = new Object[2][3];
-        obj[0][0] = 500;
-        obj[0][1] = 3;
-        obj[0][2] = 1500;
-
-        obj[1][0] = 350;
-        obj[1][1] = 20;
-        obj[1][2] = 7000;
-
-        return obj;
+        return new Object[][]{
+                {500, 3, 1500},
+                {350, 20, 7000}
+        };
     }
 
 
@@ -135,18 +106,10 @@ public class CalculatorTest {
 
     @DataProvider
     public Object[][] testDataMultDouble(){
-        Object [][] obj = new Object[2][4];
-        obj[0][0] = 5.2;
-        obj[0][1] = 2.3;
-        obj[0][2] = 11.96;
-        obj[0][3] = 0.001;
-
-        obj[1][0] = 12.5;
-        obj[1][1] = 4.2;
-        obj[1][2] = 52.5;
-        obj[1][3] = 0.001;
-
-        return obj;
+        return new Object[][]{
+                {5.2, 2.3, 11.96, 0.001},
+                {12.5, 4.2, 52.5, 0.001}
+        };
     }
 
 
@@ -159,16 +122,10 @@ public class CalculatorTest {
 
     @DataProvider
     public Object[][] testDataDivLong(){
-        Object [][] obj = new Object[2][3];
-        obj[0][0] = 1500;
-        obj[0][1] = 3;
-        obj[0][2] = 500;
-
-        obj[1][0] = 700;
-        obj[1][1] = 20;
-        obj[1][2] = 35;
-
-        return obj;
+        return new Object[][]{
+                {1500, 3, 500},
+                {700, 20, 35}
+        };
     }
 
 
@@ -181,18 +138,10 @@ public class CalculatorTest {
 
     @DataProvider
     public Object[][] testDataDivDouble(){
-        Object [][] obj = new Object[2][4];
-        obj[0][0] = 12.2;
-        obj[0][1] = 2.0;
-        obj[0][2] = 6.1;
-        obj[0][3] = 0.001;
-
-        obj[1][0] = 12.5;
-        obj[1][1] = 2.0;
-        obj[1][2] = 6.25;
-        obj[1][3] = 0.001;
-
-        return obj;
+        return new Object[][]{
+                {12.2, 2.0, 6.1, 0.001},
+                {12.5, 2.0, 6.25, 0.001},
+        };
     }
 
 
@@ -205,18 +154,10 @@ public class CalculatorTest {
 
     @DataProvider
     public Object[][] testDataPow(){
-        Object [][] obj = new Object[2][4];
-        obj[0][0] = 3.0;
-        obj[0][1] = 3.0;
-        obj[0][2] = 27.0;
-        obj[0][3] = 0.001;
-
-        obj[1][0] = 4.0;
-        obj[1][1] = 2.0;
-        obj[1][2] = 16.0;
-        obj[1][3] = 0.001;
-
-        return obj;
+       return new Object[][]{
+                {3.0, 3.0, 27.0, 0.001},
+                {4.0, 2.0, 16.0, 0.001},
+        };
     }
 
 
@@ -229,16 +170,10 @@ public class CalculatorTest {
 
     @DataProvider
     public Object[][] testDataSqrt(){
-        Object [][] obj = new Object[2][3];
-        obj[0][0] = 144.0;
-        obj[0][1] = 12.0;
-        obj[0][2] = 0.001;
-
-        obj[1][0] = 900.0;
-        obj[1][1] = 30.0;
-        obj[1][2] = 0.001;
-
-        return obj;
+        return new Object[][]{
+                {144.0, 12.0, 0.001},
+                {900.0, 30.0, 0.001},
+        };
     }
 
 
@@ -251,12 +186,9 @@ public class CalculatorTest {
 
     @DataProvider
     public Object[][] testDataTg(){
-        Object [][] obj = new Object[1][3];
-        obj[0][0] = 1.5;
-        obj[0][1] = 14.101419947171719;
-        obj[0][2] = 0.001;
-
-        return obj;
+        return new Object[][]{
+                {1.5, 14.101419947171719, 0.001}
+        };
     }
 
 
@@ -269,12 +201,9 @@ public class CalculatorTest {
 
     @DataProvider
     public Object[][] testDataCtg(){
-        Object [][] obj = new Object[1][3];
-        obj[0][0] = 1.5;
-        obj[0][1] = 0.07091484430265245;
-        obj[0][2] = 0.001;
-
-        return obj;
+        return new Object[][]{
+                {1.5, 0.07091484430265245, 0.001}
+        };
     }
 
     // test for cos
@@ -286,12 +215,9 @@ public class CalculatorTest {
 
     @DataProvider
     public Object[][] testDataCos(){
-        Object [][] obj = new Object[1][3];
-        obj[0][0] = 2.5;
-        obj[0][1] = -0.8011436155469337;
-        obj[0][2] = 0.001;
-
-        return obj;
+        return new Object[][]{
+                {2.5, -0.8011436155469337, 0.001}
+        };
     }
 
 
@@ -304,12 +230,9 @@ public class CalculatorTest {
 
     @DataProvider
     public Object[][] testDataSin(){
-        Object [][] obj = new Object[1][3];
-        obj[0][0] = 2.5;
-        obj[0][1] = 0.5984721441039564;
-        obj[0][2] = 0.001;
-
-        return obj;
+        return new Object[][]{
+                {2.5, 0.5984721441039564, 0.001}
+        };
     }
 
 
@@ -322,14 +245,10 @@ public class CalculatorTest {
 
     @DataProvider
     public Object[][] testDataIsPositive(){
-        Object [][] obj = new Object[2][2];
-        obj[0][0] = 215;
-        obj[0][1] = true;
-
-        obj[1][0] = -215;
-        obj[1][1] = false;
-
-        return obj;
+        return new Object[][]{
+                {215, true},
+                {-215, false}
+        };
     }
 
 
@@ -342,14 +261,10 @@ public class CalculatorTest {
 
     @DataProvider
     public Object[][] testDataIsNegative(){
-        Object [][] obj = new Object[2][2];
-        obj[0][0] = 215;
-        obj[0][1] = false;
-
-        obj[1][0] = -215;
-        obj[1][1] = true;
-
-        return obj;
+        return new Object[][]{
+                {215, false},
+                {-215, true}
+        };
     }
 
 }
