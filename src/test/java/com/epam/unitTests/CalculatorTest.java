@@ -2,12 +2,14 @@ package com.epam.unitTests;
 
 import com.epam.tat.module4.Calculator;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 
 public class CalculatorTest {
 
     Calculator calculator = new Calculator();
+
 
     // test dividing by zero
     @Test(expectedExceptions = {NumberFormatException.class})
