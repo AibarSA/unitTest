@@ -1,4 +1,4 @@
-package com.tests;
+package com.epam.unitTests;
 
 import org.testng.annotations.DataProvider;
 
