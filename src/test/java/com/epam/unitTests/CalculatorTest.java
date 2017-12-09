@@ -1,8 +1,7 @@
 package com.epam.unitTests;
 
-import com.epam.tat.module4.Calculator;
+import  com.epam.tat.module4.Calculator;
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 
@@ -11,7 +10,7 @@ public class CalculatorTest {
     Calculator calculator = new Calculator();
 
 
-    // test dividing by zero
+    // test dividing by zero0
     @Test(expectedExceptions = {NumberFormatException.class})
     public void testExeptionDivLong(){
         long result = calculator.div(5, 0);
