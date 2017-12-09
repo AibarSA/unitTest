@@ -8,6 +8,8 @@ import org.testng.annotations.Test;
 public class CalculatorTest {
 
     Calculator calculator = new Calculator();
+    //test123456+
+
 
 
     // test dividing by zero0
@@ -51,7 +53,7 @@ public class CalculatorTest {
 
 
     // test for mult long
-    @Test(dataProvider="testDataMultLong", dataProviderClass = DataProviderClass.class)
+    @Test(dataProvider="testDataMultLong", dataProviderClass = DataProviderClass.class, enabled=false)
     public void testMultLong(long firstNumber, long secondNumber, long expectedResult){
         long result = calculator.mult(firstNumber, secondNumber);
         Assert.assertEquals(result,expectedResult);
@@ -60,7 +62,7 @@ public class CalculatorTest {
 
 
     // test for mult double
-    @Test(dataProvider="testDataMultDouble", dataProviderClass = DataProviderClass.class)
+    @Test(dataProvider="testDataMultDouble", dataProviderClass = DataProviderClass.class, enabled=false)
     public void testMultDouble(double firstNumber, double secondNumber, double expectedResult, double delta){
         double result = calculator.mult(firstNumber, secondNumber);
         Assert.assertEquals(result,expectedResult, delta);
@@ -87,7 +89,7 @@ public class CalculatorTest {
 
 
     // test for pow
-    @Test(dataProvider="testDataPow", dataProviderClass = DataProviderClass.class)
+    @Test(dataProvider="testDataPow", dataProviderClass = DataProviderClass.class, enabled=false)
     public void testPow(double firstNumber, double secondNumber, double expectedResult, double delta){
         double result = calculator.pow(firstNumber, secondNumber);
         Assert.assertEquals(result,expectedResult, delta);
@@ -96,7 +98,7 @@ public class CalculatorTest {
 
 
     // test for sqrt
-    @Test(dataProvider="testDataSqrt", dataProviderClass = DataProviderClass.class)
+    @Test(dataProvider="testDataSqrt", dataProviderClass = DataProviderClass.class, enabled=false)
     public void testSqrt(double Number, double expectedResult, double delta){
         double result = calculator.sqrt(Number);
         Assert.assertEquals(result,expectedResult, delta);
@@ -105,7 +107,7 @@ public class CalculatorTest {
 
 
     // test for tg
-    @Test(dataProvider="testDataTg", dataProviderClass = DataProviderClass.class)
+    @Test(dataProvider="testDataTg", dataProviderClass = DataProviderClass.class, enabled=false)
     public void testTg(double Number, double expectedResult, double delta){
         double result = calculator.tg(Number);
         Assert.assertEquals(result,expectedResult, delta);
@@ -114,7 +116,7 @@ public class CalculatorTest {
 
 
     // test for ctg
-    @Test(dataProvider="testDataCtg", dataProviderClass = DataProviderClass.class)
+    @Test(dataProvider="testDataCtg", dataProviderClass = DataProviderClass.class, enabled=false)
     public void testCtg(double Number, double expectedResult, double delta){
         double result = calculator.ctg(Number);
         Assert.assertEquals(result,expectedResult, delta);
@@ -123,7 +125,7 @@ public class CalculatorTest {
 
 
     // test for cos
-    @Test(dataProvider="testDataCos", dataProviderClass = DataProviderClass.class)
+    @Test(dataProvider="testDataCos", dataProviderClass = DataProviderClass.class, enabled=false)
     public void testCos(double Number, double expectedResult, double delta){
         double result = calculator.cos(Number);
         Assert.assertEquals(result,expectedResult, delta);
